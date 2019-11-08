@@ -19,11 +19,11 @@ import csv
 
 # NHL Pull
 
-json_file='/Users/adsardin/Desktop/SS.json'
+json_file='SS.json'
 with open(json_file, 'r') as json_data:
     x = json.load(json_data)
 
-f = csv.writer(open("/Users/adsardin/Desktop/Personal/Nov7-4game.csv", "w"))
+f = csv.writer(open("Personal/Nov7-4game.csv", "w"))
 
 f.writerow(["name", "fd_points", "position", "line_pos","actual score"])
 for player in x['players']:
